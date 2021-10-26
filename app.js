@@ -19,17 +19,23 @@ app.use(cookieParser());
 app.use(jwtMiddleware);
 app.use('/',router);
 app.use((error, req, res, next)=> {
-    console.log(error);
     if (error.message === 'Unauthorized') error.status = 401;
+    else if (error.message === 'Forbidden') error.status = 403;
+    console.log(error.message);
     switch(error.status){
         case 401:
-			res.status(401).send({error : "Unauthorized"});
+            if(!error.message) error.message = 'Unauthorized';
+            break;
+        case 403:
+            if(!error.message) error.message = 'Forbidden';
             break;
         case 404:
-			res.status(404).send({error : "not found"});
+            if(!error.message) error.message = 'not found';
             break;
         default:
-            res.status(500).send({error : "something wrong in server"});
+            error.status = 500;
+            error.message = '서버에서 문제가 발생했습니다.';
     }
+    res.status(error.status).send({message: error.message});
 });
 app.listen(port, () => console.log(`app listening on port ${port}`));

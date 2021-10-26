@@ -11,8 +11,8 @@ router.get('/token', userController.auth);
 
 router.post('/post', postController.writePost);
 router.patch('/post', postController.modifyPost);
-router.delete('/post/:post_id', postController.deletePost);
-router.get('/post/list/:page_num', postController.getPostList);
-router.get('/post/:post_id', postController.getPostDetail);
+router.delete('/post', postController.deletePost);
+router.get('/post/list', postController.getPostList);
+router.get('/post', postController.getPostDetail);
 
 module.exports = router; 

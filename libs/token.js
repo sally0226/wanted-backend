@@ -29,7 +29,6 @@ const jwtMiddleware = (req, res, next) => {
         req.user = decoded.user_id; 
     }catch(err){
         // token validation 실패 
-        console.log(err);
         req.user = null;
         console.log('token validation fail');
     }

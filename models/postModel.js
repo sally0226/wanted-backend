@@ -39,13 +39,19 @@ const deletePost = (post_id, user_id) => {
         });
     });
 }
-const selectPosts = (page_num, post_num) => {
+const getPostList = (page_num, offset) => {
     return new Promise((resolve, reject)=> {
+        let count;
+        db.posts.count({},(err,n)=>{
+            if (err) reject(err);
+            count = n;
+            if (count < (page_num-1)*offset+1) resolve({count});
+        });
         db.posts.find({}).sort({createAt: -1}) //-1 : 내림차순, 1 : 오름차순
-            .skip(page_num-1).limit(post_num)
+            .skip(page_num-1).limit(offset)
             .exec((err, docs) =>{
                 if (err) reject(err);
-                resolve(docs);
+                resolve({post_list: docs, count});
             });
     });
 }
@@ -62,6 +68,6 @@ module.exports = {
     createPost,
     updatePost,
     deletePost,
-    selectPosts,
+    getPostList,
     selectPost
 }
