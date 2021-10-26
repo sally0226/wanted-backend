@@ -1,0 +1,5 @@
+{"user_id":"06","user_pw":"1234","user_name":"김바다","user_email":"sally0226@naver.com","_id":"0tpZwm9TDw00stTc"}
+{"user_id":"0226","user_pw":"1234","user_name":"김바다","user_email":"sally0226@naver.com","_id":"Ii4PJCVVzn5psPUw"}
+{"user_id":"sally0226","user_pw":"1234","user_name":"김바다","user_email":"sally0226@naver.com","_id":"O1uHiROz6NrTUVaN"}
+{"user_id":"sally","user_pw":"1234","user_name":"김바다","user_email":"sally0226@naver.com","_id":"vd1OVFhIQSSWozpV"}
+{"$$indexCreated":{"fieldName":"user_id","unique":true,"sparse":false}}
