@@ -1,0 +1,23 @@
+{
+  "name": "wanted-backend",
+  "version": "1.0.0",
+  "description": "[위코드 x 원티드] 백엔드 프리온보딩 선발 과제",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "nedb": "^1.8.0",
+    "nedb-promise": "^2.0.1",
+    "nedb-promises": "^5.0.1",
+    "nodemon": "^2.0.14"
+  }
+}
