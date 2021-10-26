@@ -1,0 +1,4 @@
+{"title":"first post","desc":"This is my first post!","createAt":1635247497140,"user_id":"sally","_id":"Db6rfy1Rod25Lku8"}
+{"title":"first post","desc":"This is my first post!","createAt":1635247495458,"user_id":"sally","_id":"lpZOCanedtdjFDR1"}
+{"title":"second post","desc":"This is my second post!","createAt":1635247496284,"user_id":"sally","_id":"nmZAUi0SXujLNidx","updateAt":1635247903112}
+{"$$indexCreated":{"fieldName":"updateAt","unique":false,"sparse":true}}
