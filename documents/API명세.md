@@ -4,17 +4,17 @@
 
 #### 회원
 
-- [회원가입 (POST /user)](#`post`-/user)
-- [로그인 (JWT발급)](#`post` /token)
-- [인증 (JWT해독)](#`get` /token)
+- [회원가입 (POST /user)](https://github.com/sally0226/wanted-backend/blob/main/documents/API%EB%AA%85%EC%84%B8.md#post-user)
+- [로그인 (JWT발급)](https://github.com/sally0226/wanted-backend/blob/main/documents/API%EB%AA%85%EC%84%B8.md#post-token)
+- [인증 (JWT해독)](https://github.com/sally0226/wanted-backend/blob/main/documents/API%EB%AA%85%EC%84%B8.md#get-token)
 
 #### 게시글
 
-- [게시글 작성](#`post` /post)
-- [게시글 수정](#`patch` /post)
-- [게시글 삭제](#`delete` /post)
-- [게시글 목록 가져오기](#`get` /post/list?offset=6&page_num=1)
-- [게시글 상세 내용 가져오기](#`get` /post?post_id=_id)
+- [게시글 작성](https://github.com/sally0226/wanted-backend/blob/main/documents/API%EB%AA%85%EC%84%B8.md#post-post)
+- [게시글 수정](https://github.com/sally0226/wanted-backend/blob/main/documents/API%EB%AA%85%EC%84%B8.md#patch-post)
+- [게시글 삭제](https://github.com/sally0226/wanted-backend/blob/main/documents/API%EB%AA%85%EC%84%B8.md#delete-postpost_id_id)
+- [게시글 목록 가져오기](https://github.com/sally0226/wanted-backend/blob/main/documents/API%EB%AA%85%EC%84%B8.md#get-postlistoffset6page_num1)
+- [게시글 상세 내용 가져오기](https://github.com/sally0226/wanted-backend/blob/main/documents/API%EB%AA%85%EC%84%B8.md#get-postpost_id_id)
 
 ### `POST` /user
 
